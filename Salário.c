@@ -3,33 +3,47 @@
 
 int main(){
 
-	double horas, salario, horExt;
-	int depedents;
+    float horas, salario, salariob, salarioh, horExt, final;
+    int dependents;
 
-	printf("Informe a quantidade de horas trabalhadas");
-	scanf("%lf",&horas);
+	printf("Informe a quantidade de horas trabalhadas\n");
+	scanf("%f",&horas);
 
-    printf("O valor que recebe por horas");
-    scanf ("%lf",&salario);
+    printf("O valor que recebe por horas\n");
+    scanf ("%f",&salario);
 
-    printf("Quantidade de horas extra");
-    scanf("%lf",&horExt);
+    printf("Quantidade de horas extra\n");
+    scanf("%f",&horExt);
 
-	printf("Numero de dependents");
-	scanf("%d",&depedents);
-
-	salario*=horas;
+	printf("Numero de dependents\n");
+	scanf("%d",&dependents);
 
 	if(horExt>0){
 
-        horExt=salario*2;
-        salario=horExt;
+            horExt=horExt*2;
+    salarioh=salario*(horExt+horas);
+    final=salarioh;
 
-	}
 
-		printf("%.2lf",salario);
+    }if(dependents>0){
 
-		system("pause");
-		return 0;
+        salario=salario*horas;
+        salariob=salario*(dependents*0.05);
+        final=salariob+salario;
 
+    }if((horExt>0)&&(dependents>0)){
+
+        final=salarioh+salariob;
+
+    }if((horExt==0)&&(dependents==0)){
+
+        salario=salario*horas;
+        final=salario;
+
+    }
+
+    printf("O valor a receber sera:%.2f\n",final);
+
+	system("pause");
+	return 0;
 }
