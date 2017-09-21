@@ -3,7 +3,8 @@
 int main(){
 
 	float x,y;
-
+	
+	printf("Informe os valor de x e y");
 	scanf("%f %f",&x, &y);
 
 	if (x==0 && y==0){
