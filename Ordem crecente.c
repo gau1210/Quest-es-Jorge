@@ -5,7 +5,7 @@
 
 int main(){
 
-	int v[vetor];//Declaracao das vari·veis;
+	int v[vetor];//Declaracao das vari√°veis;
 	int aux=0,j=0,i=0;
 
 	//Atribuido valores ao vetor;
@@ -20,14 +20,14 @@ int main(){
             for(j=i+1;j<vetor;j++){
                 if(v[i] > v[j]){
 
-		 aux = v[i];   // usa uma vari·vel auxiliar para fazer as trocas
+		 aux = v[i];   // Usa uma vari√°vel auxiliar para fazer as trocas
 		 v[i] = v[j];
 	     v[j] = aux;
 
             }
         }
     }
-    //ImpreÁ„o dos valores menores pros
+    //Impre√ß√£o dos valores menores pros
     //maiores quando de i=0 ate o tamanho do arrey;
     for(i=0; i<vetor;i++){
 
