@@ -4,10 +4,10 @@
 int main(){
 
 	int i,j,m,n;
+	
+	int a[2][3],b[2][3],c[2][3];
 
 	scanf("%d %d",&m,&n);
-
-	int a[2][3],b[2][3],c[2][3];
 
 	for(i=0; i<m; i++){
 
